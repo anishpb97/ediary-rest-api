@@ -2,7 +2,7 @@
   "name": "ediary-rest-api",
   "version": "1.0.0",
   "description": "Rest API Endpoints for e-Diary application",
-  "main": "index.ts",
+  "main": "build/index.js",
   "scripts": {
     "start": "nodemon",
     "build": "tsc",
@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/anishpb97/ediary-rest-api#readme",
   "dependencies": {
+    "dotenv": "^12.0.3",
     "express": "^4.17.2"
   },
   "devDependencies": {
