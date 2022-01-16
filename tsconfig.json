@@ -14,6 +14,9 @@
     "esModuleInterop": true,
     /* Advanced Options */
     "skipLibCheck": true,
+    "paths": {
+      "@/*": ["*"]
+    },
     "forceConsistentCasingInFileNames": true
 },
 "lib": ["es2015"],

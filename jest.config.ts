@@ -78,7 +78,9 @@ export default {
   // ],
 
   // moduleNameMapper: {},
-
+  moduleNameMapper: {
+    '@/(.*)': '<rootDir>/src/$1'
+  },
   // modulePathIgnorePatterns: [],
 
   // Activates notifications for test results
