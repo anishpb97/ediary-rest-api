@@ -103,6 +103,9 @@ dist
 # TernJS port file
 .tern-port
 
+# Jest MongoDB config
+globalConfig.json
+
 # Other files
 
 .DS_Store
