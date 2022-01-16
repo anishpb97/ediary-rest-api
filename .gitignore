@@ -106,6 +106,8 @@ dist
 # Jest MongoDB config
 globalConfig.json
 
+#Docker files
+data/
 # Other files
 
 .DS_Store

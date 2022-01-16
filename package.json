@@ -5,7 +5,7 @@
   "main": "build/api/server.js",
   "scripts": {
     "start": "nodemon",
-    "build": "tsc",
+    "build": "tsc -p tsconfig.json",
     "commit": "git-cz",
     "test": "jest"
   },

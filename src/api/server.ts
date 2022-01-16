@@ -1,3 +1,4 @@
+import 'module-alias/register';
 import dotenv from 'dotenv';
 import { MongoHelper } from '@/api/infra/db/mongodb';
 

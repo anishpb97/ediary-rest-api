@@ -1,16 +1,16 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es2019",
     "module": "commonjs",
     "sourceMap": true,
-    "outDir": "./build",
-    "rootDir": "./src",
+    "outDir": "build",
+    "rootDirs": ["src"],
     /* Strict Type-Checking Options */
     "strict": true,
     "noImplicitAny": true,
     /* Module Resolution Options */
     "moduleResolution": "node",
-    "baseUrl": "./src",
+    "baseUrl": "src",
     "esModuleInterop": true,
     /* Advanced Options */
     "skipLibCheck": true,
@@ -19,8 +19,8 @@
     },
     "forceConsistentCasingInFileNames": true
 },
-"lib": ["es2015"],
-"include": ["src/**/*"],
+"lib": ["es2019"],
+"include": ["src"],
 "exclude": ["node_modules"]
 }
 
