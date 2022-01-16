@@ -1,0 +1,26 @@
+version: '3'
+services:
+  mongo:
+    container_name: mongo-container
+    image: mongo:3
+    restart: always
+    volumes:
+      - ./data:/data/db
+    ports:
+      - "27017:27017"
+  api:
+    container_name: api-container
+    image: node:12
+    working_dir: /usr/src/ediary-api
+    restart: always
+    command: bash -c "npm install && npm run build && npm run start"
+    volumes:
+      - ./build/:/usr/src/ediary-api/build/
+      - ./src/:/usr/src/ediary-api/src/
+      - ./package.json:/usr/src/ediary-api/package.json
+      - ./package-lock.json:/usr/src/ediary-api/package-lock.json
+      - ./tsconfig.json:/usr/src/ediary-api/tsconfig.json
+    ports:
+      - "${PORT}:${PORT}"
+    links:
+      - mongo
